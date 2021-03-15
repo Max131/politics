@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,400;1,600&family=Open+Sans:ital,wght@0,700;1,400&display=swap");
 :root {
-  --col1: #00b0ff;
-  --col2: #ff5500;
+  --col1: #FF8300;
   --col3: #191970;
   --col4: #ff5500;
-  --colt: #444444;
+  --colt: #404041;
   --colt2: #f5f5f5;
   --bg1: #f5f5dc;
 }
@@ -16,14 +16,12 @@
 }
 
 html {
-  font: 18px/1.5 system-ui, sans-serif;
+  font: 18px/1.5 'Open Sans', system-ui, sans-serif;
 }
 
 body {
+  background: radial-gradient(circle at center, white, lightsalmon);
   padding-bottom: 3rem;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
-  background-attachment: fixed;
 }
 
 nav {
@@ -89,7 +87,7 @@ nav a {
 
 header {
   min-height: calc(100vh - 3rem);
-  background: url("imgs/adult-1868750_640.jpg") no-repeat fixed center;
+  background: url("imgs/people.jpg") no-repeat fixed center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -99,13 +97,18 @@ header {
 
 header h1 {
   margin-bottom: 0;
-  font-size: 3rem;
+  font: 3rem 'Comfortaa';
   color: var(--col1);
 }
 
 header p {
-  margin-top: 0;
-  color: var(--col2);
+  background: var(--colt);
+  opacity: 0.5;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+  color: var(--colt2);
 }
 
 .container {
@@ -131,8 +134,8 @@ figure figcaption {
 h2 {
   text-align: center;
   color: var(--col1);
-  margin: 6rem auto;
-  font-family: 'Merriweather', serif;
+  margin: 6rem auto 2rem;
+  font-family: 'Comfortaa', serif;
 }
 
 .first {
@@ -257,10 +260,10 @@ h2 {
 
 .contact-form input, .contact-form textarea {
   display: block;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   margin-bottom: 1.25rem;
   min-width: 100%;
   appearance: none;
-  background: none;
   border: none;
   outline: none;
 }
@@ -287,6 +290,7 @@ h2 {
   min-width: 100%;
   max-width: 100%;
   resize: none;
+  padding: 0.5rem;
 }
 
 .contact-form button {
@@ -299,12 +303,11 @@ h2 {
 
 a {
   text-decoration: none;
-  color: var(--col2);
+  color: var(--col1);
 }
 
 footer {
-  background: var(--colt);
-  color: var(--bg1);
+  color: var(--colt);
   padding: 2rem;
 }
 
@@ -337,8 +340,7 @@ footer p {
   nav {
     display: flex;
     align-items: center;
-    background: var(--colt);
-    color: var(--colt2);
+    color: var(--colt);
     padding: 0.5rem 1rem;
     position: initial;
   }
@@ -369,13 +371,14 @@ footer p {
     color: var(--colt2);
   }
   nav a:hover {
-    color: var(--col1);
+    color: var(--colt);
   }
   .title {
     margin: 0;
     margin-right: auto;
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--colt2);
   }
   .menu {
     display: none;
