@@ -97,6 +97,7 @@ header {
 
 header h1 {
   margin-bottom: 0;
+  text-align: center;
   font: 3rem 'Comfortaa';
   color: var(--col1);
 }
