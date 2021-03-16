@@ -20,7 +20,6 @@ html {
 }
 
 body {
-  background: radial-gradient(circle at center, white, lightsalmon);
   padding-bottom: 3rem;
 }
 
@@ -87,7 +86,7 @@ nav a {
 
 header {
   min-height: calc(100vh - 3rem);
-  background: url("imgs/people.jpg") no-repeat fixed center;
+  background: url("imgs/people.jpg") fixed no-repeat center/cover;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -135,12 +134,16 @@ figure figcaption {
 h2 {
   text-align: center;
   color: var(--col1);
-  margin: 6rem auto 2rem;
+  margin: 3rem auto 2rem;
   font-family: 'Comfortaa', serif;
 }
 
 .first {
   margin: 3rem 0;
+}
+
+.two img {
+  border-radius: 50%;
 }
 
 .slides {
@@ -261,10 +264,10 @@ h2 {
 
 .contact-form input, .contact-form textarea {
   display: block;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   margin-bottom: 1.25rem;
   min-width: 100%;
   appearance: none;
+  background: none;
   border: none;
   outline: none;
 }
@@ -291,7 +294,6 @@ h2 {
   min-width: 100%;
   max-width: 100%;
   resize: none;
-  padding: 0.5rem;
 }
 
 .contact-form button {
@@ -317,6 +319,9 @@ footer p {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
   .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -389,6 +394,7 @@ footer p {
 @media screen and (min-width: 1200px) {
   body {
     padding-bottom: 0;
+    font-size: 24px;
   }
   .second {
     margin: 0 auto;
